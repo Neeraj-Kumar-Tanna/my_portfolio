@@ -966,6 +966,13 @@ p {
     gap: 2rem;
 }
 
+.cert-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+}
+
 .cert-card {
     background: var(--secondary-black);
     padding: 2rem;
@@ -975,11 +982,14 @@ p {
     align-items: flex-start;
     gap: 1.5rem;
     transition: var(--transition-smooth);
+    height: 100%;
 }
 
-.cert-card:hover {
-    border-color: var(--text-muted);
-    background: var(--tertiary-black);
+.cert-card-link:hover .cert-card {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .cert-icon {
